@@ -62,9 +62,8 @@ This class is crucial for creating a comprehensive set of keywords that improve 
    - **`_CleanCouresNo`**: Cleans course numbers by removing unwanted characters, particularly slashes, to ensure consistency.
 
 
-### **Additional Notes:**
-- The class ensures comprehensive keyword coverage by combining different variations and formatting options.
-- It is tailored to handle Arabic script complexities and integrates numeric data effectively.
+ **Additional Notes:**
+- The class tailored to handle Arabic script complexities and integrates numeric data effectively.
 
 
 #### Data Access:
