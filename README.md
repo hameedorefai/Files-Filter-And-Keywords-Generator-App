@@ -93,7 +93,10 @@ https://github.com/user-attachments/assets/1e143f7c-ac3b-475f-87e7-88f0606a62a3
 
 - **frmManageKeywords:** Manage keywords for a specific course, with the ability to add and delete keywords.
 
-https://github.com/user-attachments/assets/23eb9f2b-c966-4385-b3e9-408122982883
+
+https://github.com/user-attachments/assets/ce447a7e-656b-463e-bf18-d8d1b78b71c5
+
+
 
 
 - **frmOperationLog:** Displays the operation log. --  Not required at this time as a Form!
@@ -109,4 +112,48 @@ https://github.com/user-attachments/assets/23eb9f2b-c966-4385-b3e9-408122982883
 ![image](https://github.com/user-attachments/assets/61eaf238-c423-42a9-9cdd-94cab4e30482)
 
 ![image](https://github.com/user-attachments/assets/821ae76a-0fec-43e0-8ca6-5a70208ffb1f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
