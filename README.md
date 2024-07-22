@@ -97,6 +97,7 @@ https://github.com/user-attachments/assets/23eb9f2b-c966-4385-b3e9-408122982883
 
 
 - **frmOperationLog:** Displays the operation log. --  Not required at this time as a Form!
+
   https://github.com/user-attachments/assets/bfc713b0-4e4c-4123-a0ee-15105489bee3
 
 
