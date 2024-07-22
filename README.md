@@ -8,6 +8,7 @@ The application allows users to add, update, and delete courses, generate and ma
 - **Programming Language:** C#
 - **User Interface:** Windows Forms (WinForms)
 - **Database:** SQL Server
+- **Data Access**: ADO.NET
 - **Storage:** Course data and keywords and operation logs
 
 ### Program Components
