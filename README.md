@@ -37,7 +37,7 @@ A class responsible for filtering and managing files based on course-related key
                             It logs detailed information about each file operation and any encountered errors.
 
 
-**`clsKeywordGenerator`**
+- **clsKeywordGenerator**
 
 A static class designed for generating and refining keywords based on course names and numbers, with a focus on handling Arabic script variations and formatting.
 This class is crucial for creating a comprehensive set of keywords that improve search and filtering capabilities.
