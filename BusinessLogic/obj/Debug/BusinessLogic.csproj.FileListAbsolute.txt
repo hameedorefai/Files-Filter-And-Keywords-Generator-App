@@ -1,0 +1,9 @@
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.pdb

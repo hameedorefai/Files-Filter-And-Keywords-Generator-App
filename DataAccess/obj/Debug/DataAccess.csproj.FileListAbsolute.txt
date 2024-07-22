@@ -1,0 +1,6 @@
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\DataAccess\obj\Debug\DataAccess.pdb
