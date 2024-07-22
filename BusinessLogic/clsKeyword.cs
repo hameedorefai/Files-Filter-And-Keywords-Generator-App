@@ -88,12 +88,12 @@ namespace BusinessLogic
                 List<string> NewKeywords = _GenerateKeywords();
                 foreach (string keyword in NewKeywords)
                 {
-                    if(!_IsExist(keyword))
-                    {
+                 //   if(!_IsExist(keyword))
+                  //  {
                         AddNewKeyword(keyword);
                         KeywordsCounter++;
 
-                    }
+                  //  }
                 }
             }
             catch(Exception ex)
