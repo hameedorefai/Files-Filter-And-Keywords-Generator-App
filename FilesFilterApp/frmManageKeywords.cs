@@ -93,7 +93,7 @@ namespace FilesFilterApp
 
         private void label1_Click(object sender, EventArgs e)
         {
-          //  var loadingTask = Task.Run(() => LoadingLabel());
+        //    var loadingTask = Task.Run(() => LoadingLabel());
 
             Course = clsCourse.Find(_courseId);
 
@@ -144,22 +144,22 @@ namespace FilesFilterApp
         }
         private async void LoadingLabel()
         {
-            while (true)
-            {
-                lblLoading1.Visible = true;
-                await Task.Delay(300);
-                lblLoading2.Visible = true;
-                await Task.Delay(300);
-                lblLoading3.Visible = true;
-                await Task.Delay(500);
-                lblLoading2.Visible = false;
-                lblLoading3.Visible = false;
-                await Task.Delay(300);
-                lblLoading2.Visible = true;
-                await Task.Delay(300);
-                lblLoading3.Visible = true;
-                await Task.Delay(500);
-            }
+            //while (true)
+            //{
+            //    lblLoading1.Visible = true;
+            //    await Task.Delay(300);
+            //    lblLoading2.Visible = true;
+            //    await Task.Delay(300);
+            //    lblLoading3.Visible = true;
+            //    await Task.Delay(500);
+            //    lblLoading2.Visible = false;
+            //    lblLoading3.Visible = false;
+            //    await Task.Delay(300);
+            //    lblLoading2.Visible = true;
+            //    await Task.Delay(300);
+            //    lblLoading3.Visible = true;
+            //    await Task.Delay(500);
+            //}
         }
 
         private void ShowKeywordstoolStripMenuItem_Click(object sender, EventArgs e)
