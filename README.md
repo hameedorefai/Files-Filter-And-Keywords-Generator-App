@@ -15,6 +15,7 @@ The application allows users to add, update, and delete courses, generate and ma
 #### User Interfaces (WinForms):
 - **frmMain:** The main interface of the application, including controls for managing paths and filtering files.
 - **frmAddCourse:** Form for adding a new course.
+- **frmManageCourses:** Form for managing Courses.
 - **frmManageKeywords:** Form for managing keywords for a specific course.
 - **frmOperationLog:** Form for displaying the operation log.
 
@@ -80,7 +81,7 @@ https://github.com/user-attachments/assets/9c14d023-d4e4-4917-9501-2c25c33e1a5d
 
 - **Filter Files:** Filters files based on specified criteria.
 
-- **frmManageCourses:** Form for adding a new course with input validation.
+- **frmManageCourses:** Form for managing Courses.
 
 https://github.com/user-attachments/assets/e335ce2d-0d2c-42c1-bc5d-711a1725ca42
 
@@ -91,7 +92,7 @@ https://github.com/user-attachments/assets/e335ce2d-0d2c-42c1-bc5d-711a1725ca42
 https://github.com/user-attachments/assets/1e143f7c-ac3b-475f-87e7-88f0606a62a3
 
 
-- **frmManageKeywords:** Manage keywords for a specific course, with the ability to add and delete keywords.
+- **frmManageKeywords:** Manage keywords for a specific course, with the ability to generate, add and delete keywords.
 
 
 https://github.com/user-attachments/assets/ce447a7e-656b-463e-bf18-d8d1b78b71c5
