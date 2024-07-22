@@ -33,7 +33,7 @@ A class responsible for filtering and managing files based on course-related key
 
 3. **File Copying:** Files matching any of the keywords are copied to the respective course's subdirectory. 
 
-4. **Logging Operations:** The class maintains logs of operations, noting successes and failures during the file filtering process.
+- **Logging Operations:** The class maintains logs of operations, noting successes and failures during the file filtering process.
                             It logs detailed information about each file operation and any encountered errors.
 
 
