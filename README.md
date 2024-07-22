@@ -87,6 +87,7 @@ https://github.com/user-attachments/assets/e335ce2d-0d2c-42c1-bc5d-711a1725ca42
 
 - 
 - **frmAddCourse:** Form for adding a new course with input validation.
+
 https://github.com/user-attachments/assets/1e143f7c-ac3b-475f-87e7-88f0606a62a3
 
 
