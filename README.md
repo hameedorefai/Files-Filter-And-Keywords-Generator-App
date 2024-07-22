@@ -21,8 +21,8 @@ The application allows users to add, update, and delete courses, generate and ma
 #### Business Logic:
 - **clsCourse:** Class for managing course data.
 - **clsKeyword:** Class for managing keywords.
-- - **clsPath:** Class for managing paths.
--**clsFilteringProcess:**  
+- **clsPath:** Class for managing paths.
+- **Filtering Process:**  
 A class responsible for filtering and managing files based on course-related keywords. It performs the following functions:
 
 1. **Filtering Files:** The `FilterFiles` method iterates through a list of courses and processes files from a source directory.
