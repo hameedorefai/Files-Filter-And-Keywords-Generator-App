@@ -3,88 +3,88 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace BusinessLogic
 {
+
     public class clsFilteringProcess
     {
-
-
         static public int FilterFiles()
         {
+            int LocalCourseID = -1;
+            string LocalFileName = "";
+
             int FilteredFilesCounter = 0;
-
             string SourceFolderPath = clsPath.GetSourceFolderPath();
-
             DataTable Courses = clsCourse.GetAllCoursesInfo();
+
             foreach (DataRow courseRow in Courses.Rows)
             {
                 try
                 {
-                     int CourseID = Convert.ToInt32(courseRow["CourseID"]);
-                    // int CourseID = 362;
-
-
+                    int CourseID = Convert.ToInt32(courseRow["CourseID"]);
+                    LocalCourseID = CourseID;
                     string SubCourseFolderPath = clsCourse.GetCoursePathByCourseID(CourseID);
+
                     if (!Directory.Exists(SubCourseFolderPath))
                     {
-
                         Directory.CreateDirectory(SubCourseFolderPath);
                     }
 
-                    var AllFiles = Directory.GetFiles(SourceFolderPath);
+                    // temporary
+                   // SubCourseFolderPath = SubCourseFolderPath + @"\MidtermExams"; // here, I can add the sub file. (inside course file)
+
+                                        var AllFiles = Directory.GetFiles(SourceFolderPath);
                     clsCourse Course = clsCourse.Find(CourseID);
                     List<string> keywords = Course.GetAllKeywords();
-                    var filteredFiles = AllFiles.Where(file => keywords.Any(keyword => Path.GetFileName(file).IndexOf(keyword, StringComparison.OrdinalIgnoreCase) >= 0));
 
 
+                    List<string> normalizedKeywords = keywords
+                        .Select(k => Regex.Replace(k, @"[\W_]+", "").ToLower())
+                        .ToList();
 
+                    var filteredFiles = AllFiles.Where(file =>
+                    {
 
-                    string fileName = "";
+                        string normalizedFileName = Regex.Replace(Path.GetFileNameWithoutExtension(file), @"[\W_]+", "").ToLower();
+                        return normalizedKeywords.Any(keyword => normalizedFileName.Contains(keyword));
+                    });
+
                     foreach (var file in filteredFiles)
                     {
                         try
                         {
-                            fileName = Path.GetFileNameWithoutExtension(file);
+                            string fileName = Path.GetFileNameWithoutExtension(file); 
+                            LocalFileName = fileName;
+                            string fileExtension = Path.GetExtension(file);
+                            string destinationFilePath = Path.Combine(SubCourseFolderPath, fileName + fileExtension);
 
-                            File.Copy(file, Path.Combine(SubCourseFolderPath, fileName), true);
+                              File.Copy(file, destinationFilePath, true);
+                          //  File.Move(file, destinationFilePath);
 
-
-
-                            if (File.Exists(Path.Combine(SubCourseFolderPath, fileName)))
+                            if (File.Exists(destinationFilePath))
                             {
                                 clsOperationLog.CreateNewOperationLog(CourseID, fileName, "Succeed", "Adding Files");
                                 FilteredFilesCounter++;
                             }
                             else
                             {
-                                try
+                                clsOperationLog.CreateNewOperationLog(CourseID, fileName, "Failed", "Adding Files", "");
+                                if (FilteredFilesCounter == 0)
                                 {
-                                    throw new Exception("File does not exist: " + Path.Combine(SubCourseFolderPath, fileName));
-                                }
-                                catch (Exception ex)
-                                {
-                                    clsOperationLog.CreateNewOperationLog(CourseID, fileName, "Failed", "Adding Files", ex.Message);
-                                    if (FilteredFilesCounter == 0)
-                                    {
-                                        FilteredFilesCounter = -1; // هذا اللوجيك غير دقيقة سأعود لهذا الأمر لاحقاً.
-                                    }
-
+                                    FilteredFilesCounter = -1; // هذا اللوجيك غير دقيق سأعود له لاحقاً.
                                 }
                             }
-
-
-
                         }
                         catch (Exception ex)
                         {
+                            string fileName = Path.GetFileNameWithoutExtension(file);
                             clsOperationLog.CreateNewOperationLog(CourseID, fileName, "Failed", "Adding Files", ex.Message);
                             if (FilteredFilesCounter == 0)
                             {
-                                FilteredFilesCounter = -1; // هذا اللوجيك غير دقيقة سأعود لهذا الأمر لاحقاً.
+                                FilteredFilesCounter = -1; // هذا اللوجيك غير دقيق سأعود له لاحقاً.
                             }
                         }
                     }
@@ -95,13 +95,11 @@ namespace BusinessLogic
                     {
                         FilteredFilesCounter = -1;
                     }
+                    clsOperationLog.CreateNewOperationLog(LocalCourseID, LocalFileName, "Failed", "Adding Files", ex.Message);
                 }
-                break;// temporary
             }
 
             return FilteredFilesCounter;
         }
-
-
-        }
+    }
 }

@@ -11,9 +11,9 @@ namespace BusinessLogic
 {
     public class clsPath
     {
-        static private string _OriginalSourceFolderPath = @"D:\TeleChannelsFiles\Files";
-        static private string _OriginalFilteredFolderPath = @"D:\FolderFilesFilterApp\Courses\";
-
+        static private string _OriginalSourceFolderPath = @"D:\ExportetData\MidtermExams\files\";
+        static private string _OriginalFilteredFolderPath = @"D:\FolderFilesFilterApp\Courses\"; 
+        
         static string SourceFolderPath = _OriginalSourceFolderPath;
         static string FilteredFolderPath = _OriginalFilteredFolderPath;
 

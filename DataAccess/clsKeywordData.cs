@@ -78,8 +78,8 @@ namespace DataAccess
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
 
-            //string query = "SELECT Keyword FROM Keywords where Keywords.CourseID = @CourseID";
-            string query = "SELECT Keyword FROM Keywords where Keywords.CourseID = @CourseID and Status = 'activate'";
+            string query = "SELECT Keyword FROM Keywords where Keywords.CourseID = @CourseID";
+            //string query = "SELECT Keyword FROM Keywords where Keywords.CourseID = @CourseID and Status = 'activate'";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@CourseID", CourseID);

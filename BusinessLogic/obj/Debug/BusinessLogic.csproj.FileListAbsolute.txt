@@ -4,6 +4,6 @@ C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\BusinessLogic
 C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\BusinessLogic.pdb
 C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\DataAccess.dll
 C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\bin\Debug\DataAccess.pdb
-C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
 C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Hamee\source\repos\FilesFilterApp\BusinessLogic\obj\Debug\Business.CF5D6E35.Up2Date

@@ -1,5 +1,4 @@
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.csproj.AssemblyReference.cache
-C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.csproj.SuggestedBindingRedirects.cache
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmMain.resources
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.Properties.Resources.resources
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.csproj.GenerateResource.cache
@@ -11,10 +10,14 @@ C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\bin\Debug\BusinessLogi
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\bin\Debug\DataAccess.dll
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\bin\Debug\BusinessLogic.pdb
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\bin\Debug\DataAccess.pdb
-C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.csproj.CopyComplete
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.exe
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.pdb
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmAddCourse.resources
 C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmListCourses.resources
-C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmShowCourseInfo.resources
-C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmShowAddKeyword.resources
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmOperationLog.resources
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.frmManageKeywords.resources
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFil.871B2C21.Up2Date
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\Interop.MSSCTLB.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\Interop.MSSITLB.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\Interop.SearchIntegrationExeLib.dll
+C:\Users\Hamee\source\repos\FilesFilterApp\FilesFilterApp\obj\Debug\FilesFilterApp.csproj.ResolveComReference.cache
