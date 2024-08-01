@@ -8,6 +8,7 @@ The application allows users to add, update, and delete courses, generate and ma
 - **Programming Language:** C#
 - **User Interface:** Windows Forms (WinForms)
 - **Database:** SQL Server
+- **Data Access**: ADO.NET
 - **Storage:** Course data and keywords and operation logs
 
 ### Program Components
@@ -15,6 +16,7 @@ The application allows users to add, update, and delete courses, generate and ma
 #### User Interfaces (WinForms):
 - **frmMain:** The main interface of the application, including controls for managing paths and filtering files.
 - **frmAddCourse:** Form for adding a new course.
+- **frmManageCourses:** Form for managing Courses.
 - **frmManageKeywords:** Form for managing keywords for a specific course.
 - **frmOperationLog:** Form for displaying the operation log.
 
@@ -32,11 +34,11 @@ A class responsible for filtering and managing files based on course-related key
 
 3. **File Copying:** Files matching any of the keywords are copied to the respective course's subdirectory. 
 
-4. **Logging Operations:** The class maintains logs of operations, noting successes and failures during the file filtering process.
+- **Logging Operations:** The class maintains logs of operations, noting successes and failures during the file filtering process.
                             It logs detailed information about each file operation and any encountered errors.
 
 
-**`clsKeywordGenerator`**
+- **clsKeywordGenerator**
 
 A static class designed for generating and refining keywords based on course names and numbers, with a focus on handling Arabic script variations and formatting.
 This class is crucial for creating a comprehensive set of keywords that improve search and filtering capabilities.
@@ -61,9 +63,8 @@ This class is crucial for creating a comprehensive set of keywords that improve 
    - **`_CleanCouresNo`**: Cleans course numbers by removing unwanted characters, particularly slashes, to ensure consistency.
 
 
-### **Additional Notes:**
-- The class ensures comprehensive keyword coverage by combining different variations and formatting options.
-- It is tailored to handle Arabic script complexities and integrates numeric data effectively.
+ **Additional Notes:**
+- The class tailored to handle Arabic script complexities and integrates numeric data effectively.
 
 
 #### Data Access:
@@ -80,18 +81,24 @@ https://github.com/user-attachments/assets/9c14d023-d4e4-4917-9501-2c25c33e1a5d
 
 - **Filter Files:** Filters files based on specified criteria.
 
-- **frmManageCourses:** Form for adding a new course with input validation.
+https://github.com/user-attachments/assets/dd60c4ee-e4ac-4350-8736-4b4bcbea72f4
 
+
+
+
+
+- **frmManageCourses:** Form for managing Courses.
+ 
 https://github.com/user-attachments/assets/e335ce2d-0d2c-42c1-bc5d-711a1725ca42
 
 
-- 
+
 - **frmAddCourse:** Form for adding a new course with input validation.
 
 https://github.com/user-attachments/assets/1e143f7c-ac3b-475f-87e7-88f0606a62a3
 
 
-- **frmManageKeywords:** Manage keywords for a specific course, with the ability to add and delete keywords.
+- **frmManageKeywords:** Manage keywords for a specific course, with the ability to generate, add and delete keywords.
 
 
 https://github.com/user-attachments/assets/ce447a7e-656b-463e-bf18-d8d1b78b71c5
@@ -99,9 +106,7 @@ https://github.com/user-attachments/assets/ce447a7e-656b-463e-bf18-d8d1b78b71c5
 
 
 
-- **frmOperationLog:** Displays the operation log. --  Not required at this time as a Form!
-
-  https://github.com/user-attachments/assets/bfc713b0-4e4c-4123-a0ee-15105489bee3
+- **Operation Logs:** Displays the operation log. --  Not required at this time as a Form!
 
 
 
